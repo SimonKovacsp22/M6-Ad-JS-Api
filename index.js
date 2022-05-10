@@ -12,7 +12,7 @@ let loadedNumberOfImgs = 0
 
 
  const getPictures = function(keyWord){
-fetch(`https://api.pexels.com/v1/search?query=[${keyWord}]`, options)
+fetch(`https://api.pexels.com/v1/search?query=${keyWord}`, options)
 	.then(response => response.json())
 	.then(response => {
         console.log(response)
